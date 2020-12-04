@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Pyramid 2</title>
+	<style type="text/css">
+		.triangle {
+			position: relative;
+			height: 320px;
+			clip-path: polygon(50% 0, 20% 100%, 80% 100%);
+		}
+		.triangle div {
+			position: absolute;
+			top: 0;
+			background: #e6e6e6;
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			color: white;
+			line-height: 100px;
+			text-align: center;
+			font-size: 1em;
+			font-family: Algerian;
+			color: red;
+			transition: all 6s ease;
+        }         
+        .triangle:hover div {
+        	color: black;
+        }
+        .triangle:hover .mid {
+        	top: 110px;
+        	background: #f02146;
+        }  
+        .triangle:hover .bottom {
+        	top: 220px;
+        	background: teal;
+        }         
+	</style>
+
+</head>
+<body>
+	<div class="triangle">
+		<div class="top">Top</div>
+		<div class="mid">Mid</div>
+		<div class="bottom">Bottom</div>
+	</div>
+
+</body>
+</html>
